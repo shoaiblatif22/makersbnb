@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+    <form action="/ListOfSpaces" th:object="${space}" method="post">
+        <p>Name: <input type="text" th:field="*{name}" /></p>
+        <p>Description: <input type="text" th:field="*{description}" /></p>
+        <p>Price: <input type="text" th:field="*{price}" /></p>
+        <p>Rules: <input type="text" th:field="*{rules}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+</body>
+</html>

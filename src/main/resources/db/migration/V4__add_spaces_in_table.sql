@@ -1,0 +1,1 @@
+INSERT INTO spaces VALUES(1, 'Spanish Villa', 'A Villa', 100)

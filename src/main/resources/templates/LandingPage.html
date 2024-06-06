@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MakersBnB</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to MakersBnB!</h1>
+    <h3 th:text="${nSpaces} + ' spaces are waiting to be discovered'"></h3>
+    <h3 th:text="${nSpacesBooked} + ' spaces already booked'"></h3>
+    <h4>Recent reviews</h4>
+    <ul>
+        <li th:each="review : ${reviews}" th:text="${review}"></li>
+    </ul>
+    <h3><a href="/WelcomeMessage">Login here</a></h3>
+</div>
+</body>
+</html>

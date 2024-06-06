@@ -1,0 +1,1 @@
+ALTER TABLE spaces RENAME COLUMN prices to price;
